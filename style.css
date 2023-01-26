@@ -1,6 +1,11 @@
 /* Убирает прокрутку по горизонтале, для мобильной версии */
 html, body {
   overflow-x: hidden;
+  margin: 0;
+}
+
+.content {
+  height: 120vh;
 }
 
 .rounded-img {
@@ -13,7 +18,48 @@ html, body {
 
 .navbar {
   background-color: #e3f2fd;
+  box-shadow: 1px 1px 5px rgb(151, 151, 151);
+  height: 70px;
 }
+
+.my-carousel {
+  padding: 0;
+}
+
+.my-carousel .carousel-item {
+  display: flex;
+  max-height: 520px;
+}
+
+.my-carousel .carousel-item img {
+  object-fit: cover;
+}
+
+
+.fw-light {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  }
+
+ .lead {
+  margin-top: 25px;
+  font-size: 28px;
+  text-align: center;
+ } 
+
+ .btn_1 {
+  font-size: 18px;
+  margin-top: 50px;
+  width: 200px;
+  padding: 5px ;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+
 
 .rounded-img:hover {
   transform: scale(1.15);
@@ -28,7 +74,8 @@ html, body {
 
 .card:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22);*/
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22); 
+  
 } 
 
 .card-img-top {
@@ -39,11 +86,14 @@ footer {
   background: #f0f0f0;
   padding-top: 20px;
   color: rgba(52, 52, 52, 0.868);
-  
 }
 
 .footer-left {
   margin-right: 20px;
+}
+
+.footer-right {
+  padding-bottom: 15px;
 }
 
 .footer-right a {
@@ -62,8 +112,9 @@ footer {
 }
 
 body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
+  height: 100%;
+  overflow: auto;
+  padding-right: 0px !important;
 }
 
 .card-text {
@@ -86,8 +137,31 @@ body.modal-open {
   padding-top:  7px;
 }
 
+#clock {
+  color: rgb(125, 125, 125);
+  font-size: 17px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 650px) {
   .modal.show .modal-dialog {
-  margin-top: 50px;
+  margin-top: 60px;
 }
+
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  justify-content: flex-end;
+  margin-right: 10px; 
 }
+
+.content {
+  height: 60vh;
+}
+
+.navbar {
+  height: auto;
+}
+} 
+

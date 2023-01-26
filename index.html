@@ -13,9 +13,10 @@
       crossorigin="anonymous"></script>
    <link rel="stylesheet" href="style.css">
    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+   <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <script src="./script.js"></script>
 </head>
 
 
@@ -39,31 +40,60 @@
                </li>
             </ul>
          </div>
+         <div id="clock"></div>
       </div>
    </nav>
-   <div class="container text-center my-5">
+   <main class="content">
+  <div class="container-fluid my-carousel">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade"  data-bs-touch="true">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="image/image-carousel/5.jpg" class="d-block w-100" alt="Здесь должно быть фото">
+           </div>
+           <div class="carousel-item">
+             <img src="image/image-carousel/2.jpg" class="d-block w-100" alt="Здесь должно быть фото">
+           </div>
+           <div class="carousel-item">
+             <img src="image/image-carousel/3.jpg" class="d-block w-100" alt="Здесь должно быть фото">
+           </div>
+           <div class="carousel-item">
+            <img src="image/image-carousel/1.jpg" class="d-block w-100" alt="Здесь должно быть фото">
+          </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
       <div class="row">
          <div class="col-lg-6 col-md-8 mx-auto">
-            <img class="rounded-img" src="image/img.jpg" alt="город Мариинск" />
-            <h2 class="fw-light">Город Мариинск</h2>
+            <h1 class="fw-light">Город Мариинск</h1>
             <p class="lead text-muted fst-italic">Мариинск называют музеем под открытым небом,
                город издавна славится своей деревянной резьбой.</p>
-            <a href="https://o-kemerovo.ru/%D0%BC%D0%B0%D1%80%D0%B8%D0%B8%D0%BD%D1%81%D0%BA/" target="_blank"
-               class="btn btn-primary btn-sm">
-               Подробнее>>
-            </a>
-            <a href="https://yandex.ru/images/search?from=tabbar&text=%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%BC%D0%B0%D1%80%D0%B8%D0%B8%D0%BD%D1%81%D0%BA"
-               target="_blank" class="btn btn-secondary btn-sm">
-               Фотографии
+            <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%B8%D0%B8%D0%BD%D1%81%D0%BA" target="_blank"
+               class="btn btn-primary btn-sm btn_1">
+               Википедия >>
             </a>
          </div>
       </div>
    </div>
+</main>
    <footer style="margin-top: 265px">
       <div class="container">
          <div class="d-flex justify-content-between">
             <div class="footer-left">
                <p>2022 © Copyright: All rights reserved</p>
+
             </div>
             <div class="footer-right">
                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -75,6 +105,7 @@
          </div>
       </div>
    </footer>
+   
 </body>
 
 </html>
