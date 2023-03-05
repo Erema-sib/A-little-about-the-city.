@@ -48,7 +48,7 @@ html, body {
  .btn_1 {
   font-size: 18px;
   margin-top: 50px;
-  width: 170px;
+  width: 250px;
   padding: 5px ;
   margin-top: 60px;
   margin-bottom: 0;
@@ -80,10 +80,10 @@ html, body {
 }
 
 .features_border {
-  width: 90%;
   margin-top: 70px;
   margin-bottom: 70px;
-  margin-left: 65px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   border: 1px solid #e7e7e7;
  
 }
@@ -91,7 +91,7 @@ html, body {
 footer {
   background: #f0f0f0;
   padding-top: 20px;
-  color: rgba(52, 52, 52, 0.868);
+  color: rgba(52, 52, 52, 0.868);п
 }
 
 .footer-left {
@@ -166,6 +166,7 @@ body.modal-open {
   background-size: cover;
   background-position: center;
   margin-left: 10px;
+  box-shadow: inset 0px -10px 10px 6px rgb(255, 255, 255);
 }
 
 .promo_right {
@@ -173,6 +174,7 @@ body.modal-open {
   height: auto;
   background-color: #f1f8fd;
   margin-right: 10px;
+  box-shadow: inset 0px -10px 10px 6px rgb(255, 255, 255);
 }
 
 .promo_text h4 {
@@ -219,9 +221,6 @@ body.modal-open {
     padding-right: 4px;
   }
 
-  .features_border {
-    margin-left: 20px;
-  }
 
   .promo {
     flex-direction: column;
