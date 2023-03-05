@@ -1,5 +1,6 @@
 /* Убирает прокрутку по горизонтале, для мобильной версии */
-html, body {
+html,
+body {
   overflow-x: hidden;
   margin: 0;
 }
@@ -31,7 +32,6 @@ html, body {
   object-fit: cover;
 }
 
-
 .fw-light {
   text-align: center;
   margin-top: 60px;
@@ -39,24 +39,23 @@ html, body {
   text-shadow: 3px 5px 6px rgb(63, 63, 63);
 }
 
- .lead {
+.lead {
   margin-top: 25px;
   font-size: 28px;
   text-align: center;
- } 
+}
 
- .btn_1 {
+.btn_1 {
   font-size: 18px;
   margin-top: 50px;
   width: 250px;
-  padding: 5px ;
+  padding: 5px;
   margin-top: 60px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   display: block;
- }
-
+}
 
 .rounded-img:hover {
   transform: scale(1.15);
@@ -71,9 +70,9 @@ html, body {
 
 .card:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22); 
-  
-} 
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),
+    0px 10px 10px rgba(0, 0, 0, 0.22);
+}
 
 .card-img-top {
   border-radius: 1em;
@@ -85,13 +84,12 @@ html, body {
   margin-left: 3rem;
   margin-right: 3rem;
   border: 1px solid #e7e7e7;
- 
 }
 
 footer {
   background: #f0f0f0;
   padding-top: 20px;
-  color: rgba(52, 52, 52, 0.868);п
+  color: rgba(52, 52, 52, 0.868);
 }
 
 .footer-left {
@@ -109,7 +107,7 @@ footer {
 }
 
 .footer-right a:hover {
-  color:rgb(30, 26, 255);
+  color: rgb(30, 26, 255);
 }
 
 .modal-body {
@@ -124,7 +122,7 @@ body.modal-open {
 }
 
 .card-text {
-  text-align: center ;
+  text-align: center;
 }
 
 .p-3 {
@@ -135,12 +133,13 @@ body.modal-open {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),
+    0px 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .modal-header {
   flex-direction: column-reverse;
-  padding-top:  7px;
+  padding-top: 7px;
 }
 
 .clock_div {
@@ -189,24 +188,23 @@ body.modal-open {
   font-weight: 500;
 }
 
-
 @media screen and (max-width: 650px) {
   .modal.show .modal-dialog {
-  margin-top: 60px;
-}
+    margin-top: 60px;
+  }
 
-.footer-right {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 30%;
-  justify-content: flex-end;
-  margin-right: 10px; 
-}
+  .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
 
-.content {
-  height: 60vh;
+  .content {
+    height: 60vh;
+  }
 }
-} 
 
 @media screen and (max-width: 990px) {
   .navbar {
@@ -215,12 +213,10 @@ body.modal-open {
 }
 
 @media screen and (max-width: 760px) {
-
   .lead {
     padding-left: 4px;
     padding-right: 4px;
   }
-
 
   .promo {
     flex-direction: column;
@@ -237,11 +233,3 @@ body.modal-open {
     padding-top: 10px;
   }
 }
-  
-
-
-
-
-
-
-
