@@ -10,7 +10,7 @@ const days = [
 
 
 
-window.onload = function() {
+window.onload = function update() {
     window.setInterval(function() {
        let date = new Date();
        
@@ -28,4 +28,5 @@ window.onload = function() {
        document.getElementById("clock").innerHTML = clock;
 
     }, 1000);
+    update();
  };

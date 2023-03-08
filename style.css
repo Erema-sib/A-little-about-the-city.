@@ -9,7 +9,7 @@ body {
 .navbar {
   background-color: #e3f2fd;
   box-shadow: 1px 1px 5px rgb(151, 151, 151);
-  height: 70px;
+  height: 82px;
 }
 
 .my-carousel {
@@ -211,27 +211,40 @@ body.modal-open {
 @media screen and (max-width: 990px) {
   .navbar {
     height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 760px) {
   .lead {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
+
+  .features_border {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
 
   .promo {
     flex-direction: column;
   }
 
   .promo_image {
-    width: 100%;
+    width: auto;
     height: 500px;
-    margin: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: none;
   }
 
   .promo_right {
-    width: 100%;
+    width: auto;
     padding-top: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: none;
   }
 }
